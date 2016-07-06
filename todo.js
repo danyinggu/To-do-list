@@ -1,10 +1,18 @@
 //todo.js
 
 function addItems(itemName,List){
-   var Item = document.createElement("li");
-   Item.innerText = itemName;
-   
+   var Item = document.createElement("li");   
+   var checkbox = document.createElement("input");
+   checkbox.type = "checkbox";
+
+   var span = document.createElement("span");
+   span.innerText = itemName;
+
+   Item.appendChild(checkbox);
+   Item.appendChild(span);
+
    List.appendChild(Item);
+   
 
 }
 
