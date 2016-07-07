@@ -73,8 +73,12 @@ addItem.onclick = function() {
        if((!itemName) || (itemName == "")) {
           return false;
         }
+
+// add items (call function)
        addItems(itemName, document.getElementById("todolist"));
 
+// after adding items, select the previous field and focus them
+         inlineText.select();
+
        inlineText.focus();
-       inlineText.select();
-};
+     };
