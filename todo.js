@@ -54,16 +54,23 @@ function addItems(itemName,List){
    
 
 }
+
+//id index
 var totalNum= 0;
+
+// make the cursor focus on the field
 var inlineText = document.getElementById("inline-text");
 inlineText.focus();
 
 var addItem = document.getElementById("buttonNew");
 
+// once click the button, add text to according to items
 addItem.onclick = function() {
 
        var itemName = inlineText.value;
-       if((!itemName) || (itemName == "") ||(itemName == " ")) {
+
+//if user enters space or nothing
+       if((!itemName) || (itemName == "")) {
           return false;
         }
        addItems(itemName, document.getElementById("todolist"));
