@@ -22,6 +22,8 @@ function updateStatus() {
 }
 
 function addItems(itemName,List){
+
+   //make each checkbox+texts unique, for the clicking issue
    totalNum++;
 
    var Item = document.createElement("li");   
