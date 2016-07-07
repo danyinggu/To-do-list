@@ -8,7 +8,7 @@ function updateStatus() {
       itemInd.style.textDecoration = "line-through";
       itemInd.style.color="red";
       
-      itemInd.style.fontStyle="alias";
+      itemInd.style.fontStyle="italic";
       itemInd.style.fontSize="0.9em";
       //itemInd.classname="checked"; 
       // in .css, I can add .checked { //cssStyle }
