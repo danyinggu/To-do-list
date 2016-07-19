@@ -22,6 +22,7 @@ function updateStatus() {
       itemInd.style.fontStyle="";
       itemInd.style.color="black";
       itemInd.style.fontWeight="bold";
+      itemInd.style.fontSize="1em";
 
       // itemInd.classname="";
     }
@@ -57,7 +58,8 @@ function addItems(itemName,List){
 }
 
 //id index
-var totalNum= 0;
+var totalNum = 0;
+var totalChecked = 0;
 
 // make the cursor focus on the field
 var inlineText = document.getElementById("inline-text");
