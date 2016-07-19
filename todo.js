@@ -19,6 +19,7 @@ function updateStatus() {
       // in .css, I can add .checked { //cssStyle }
     } else {
       itemInd.style.textDecoration = "none";
+      itemInd.style.fontStyle="";
       itemInd.style.color="black";
       itemInd.style.fontWeight="bold";
 
@@ -63,6 +64,24 @@ var inlineText = document.getElementById("inline-text");
 inlineText.focus();
 
 var addItem = document.getElementById("buttonNew");
+
+inlineText.onkeyup = function(eve) {
+   if(eve.which == 13) {
+     var itemName = inlineText.value;
+    }
+    if((!itemName) || (itemName == "")) {
+          return false;
+        }
+// add items (call function)
+       addItems(itemName, document.getElementById("todolist"));
+
+// after adding items, select the previous field and focus them
+         inlineText.select();
+
+       inlineText.focus();
+
+
+};
 
 // once click the button, add text to according to items
 addItem.onclick = function() {
