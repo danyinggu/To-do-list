@@ -76,10 +76,7 @@ inlineText.onkeyup = function(eve) {
        addItems(itemName, document.getElementById("todolist"));
 
 // after adding items, select the previous field and focus them
-         inlineText.select();
-
-       inlineText.focus();
-
+         inlineText.value="";
 
 };
 
@@ -97,7 +94,5 @@ addItem.onclick = function() {
        addItems(itemName, document.getElementById("todolist"));
 
 // after adding items, select the previous field and focus them
-         inlineText.select();
-
-       inlineText.focus();
+         inlineText.value="";
      };
