@@ -20,20 +20,23 @@
 
     li {
         padding:3px 6px;
-        font-weight:bold;
         color: black;
         background-color:lightgrey;
         font-style:alias;
         font-size:1.2em;
    }
     
-    
+   #header {
+    font-size:1.5em;
+    margin-right:10px;
+   }
+
   </style> 
 
 </head>
 
 <body>
-<h1> To Do List </h1>
+<span id="header"> To Do List </span> <button id="addButton"> + </button>
 
 <p> <input type="text" id="inline-text"/> <button id="buttonNew">New Item</button>
 </p>
@@ -42,6 +45,7 @@
 </ul>
 
 <script src="todo.js"></script>
+
 
 </body>
 </html>
