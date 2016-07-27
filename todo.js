@@ -65,8 +65,8 @@ var totalChecked = 0;
 //inlineText.focus();
 //var addItem = document.getElementById("buttonNew");
 
-function itemEnter (eve){
-  var inlineText = this.id;
+function itemEnter(eve){
+  var inlineText = document.getElementById(this.id);
    if(eve.which == 13) {
      var itemName = inlineText.value;
     }
@@ -76,7 +76,7 @@ function itemEnter (eve){
     }
 
     var listID = this.id.replace("inline-text_", "");
-    var thisList = document.getElementById("todolist"+listID);
+    var thisList = document.getElementById("todolist_"+listID);
     console.log(itemName);
 // add items (call function)
        addItems(itemName, thisList);
@@ -109,7 +109,7 @@ function addItem() {
          inlineText.value="";
          inlineText.focus();
 
-};
+}
 
 
 
