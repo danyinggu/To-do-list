@@ -66,7 +66,7 @@ var totalChecked = 0;
 //var addItem = document.getElementById("buttonNew");
 
 function itemEnter(eve){
-  var inlineText = document.getElementById(this.id);
+   var inlineText = document.getElementById(this.id);
    if(eve.which == 13) {
      var itemName = inlineText.value;
     }
@@ -132,6 +132,8 @@ addList.onclick = function() {
    var newListName=document.createTextNode(listName);
    newList.style.fontWeight = "bold";
    newList.style.fontSize = "1.5em";
+   newList.style.marginBottom="0";
+   newList.style.marginTop = "1.2em";
    newList.appendChild(newListName);
    document.body.appendChild(newList);
 
