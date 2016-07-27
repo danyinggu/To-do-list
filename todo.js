@@ -164,6 +164,7 @@ addList.onclick = function() {
    document.body.appendChild(listOfItem);
 
 
+    textField.focus();
     // define the function onkeyup for the textField
     textField.onkeyup = itemEnter;
    // define the function onClick when any new button clicked
